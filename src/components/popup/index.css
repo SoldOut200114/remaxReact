@@ -31,3 +31,20 @@
 .show .section {
     transform: translateZ(0);
 }
+.title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transform: translate3d(0, -100%, 0);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+.icon.show {
+    transform: translateZ(0);
+}

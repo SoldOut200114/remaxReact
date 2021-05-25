@@ -1,0 +1,9 @@
+{
+    "symbol_url": "https://at.alicdn.com/t/font_690004_1lrdn6v9c1pi.js",
+    "save_dir": "./src/components/iconfont",
+    "use_typescript": false,
+    "platforms": "*",
+    "use_rpx": true,
+    "trim_icon_prefix": "icon",
+    "default_icon_size": 18
+}

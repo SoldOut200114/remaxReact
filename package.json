@@ -8,6 +8,7 @@
   "author": "panyun <panyun@ngarihealth.com>",
   "license": "MIT",
   "scripts": {
+    "icon": "npx iconfont-remax",
     "dev": "remax build -w -t",
     "build": "cross-env NODE_ENV=production remax build -t"
   },
@@ -18,6 +19,7 @@
     "remax": "^2.9.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "remax-iconfont-cli": "^1.1.0"
   }
 }

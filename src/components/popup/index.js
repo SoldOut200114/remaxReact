@@ -1,34 +1,38 @@
 import * as React from 'react';
 import * as styles from './index.css';
 import { View } from 'remax/one';
+import IconFont from 'components/iconfont';
 
 export default (props) => {
-    let startX, startY, endX, endY;
+    let endY;
+    let [startY, setStartY] = React.useState(0);
+    let [iconShow, setIconShow] = React.useState(false);
 
     function touchStart(e) {
         e.stopPropagation();
-        startX = e.originalEvent.changedTouches[0].pageX;
-        startY = e.originalEvent.changedTouches[0].pageY;
+        setIconShow(true);
+        setStartY(e.originalEvent.changedTouches[0].pageY);
     }
 
     function tuochEnd(e) {
         e.stopPropagation();
 
-        endX = e.originalEvent.changedTouches[0].pageX;
         endY = e.originalEvent.changedTouches[0].pageY;
 
-        if (startY - endY > 0) {
-            console.log(1);
-        } else {
+        if (startY - endY < -10) {
             props.onClose();
         }
+
+        setIconShow(false);
     }
 
     return (
         <View onClick={props.onClose} className={[styles.popup, props.open ? styles.show : styles.hide].join(' ')}>
             <View onClick={(e) => e.stopPropagation()} className={styles.section}>
-                <View onTouchEnd={tuochEnd} onTouchStart={touchStart}>
-                    title
+                <View className={styles.title} onTouchEnd={tuochEnd} onTouchStart={touchStart}>
+                    <View className={[styles.icon, iconShow ? styles.show : ''].join(' ')}>
+                        <IconFont name='xiangxia' size={30} color='#1296db'/>
+                    </View>
                 </View>
                 popup 组件
             </View>
