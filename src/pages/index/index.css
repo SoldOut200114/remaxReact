@@ -29,3 +29,6 @@
     transform: rotate(360deg);
   }
 }
+.status {
+  color: rgba(123,234,130,1);
+}

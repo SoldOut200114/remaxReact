@@ -1,0 +1,35 @@
+.card {
+    position: relative;
+    background-color: rgba(242, 242, 242, 1);
+    margin: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    color: #000;
+}
+.cover {
+
+}
+.cover > image {
+    width: 100%;
+}
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.description {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.status {
+    flex: 0 0 20%;
+    text-align: right;
+}
+.section {
+    padding: 20px;
+}
+.footer {
+    padding: 0 20px;
+    height: 80px;
+    /* background-color: rgba(255, 255, 255, 0.45); */
+}

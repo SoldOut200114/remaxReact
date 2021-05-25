@@ -1,0 +1,36 @@
+.btn-primary {
+    color: #fff;
+    background-color: #1296db;
+}
+.btn-secondary {
+    color: #1296db;
+    background-color: #ededef;
+}
+button {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 32px;
+    height: 64px;
+    line-height: 60px;
+    border: 1px solid #ededef;
+    border-radius: 64px;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin: 0;
+    outline: 0;
+    cursor: pointer;
+    overflow: unset;
+}
+button::after{
+    border:none;
+}

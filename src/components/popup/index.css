@@ -1,0 +1,33 @@
+.popup {
+    position: fixed;
+    padding-top: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.section {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    transform: translate3d(0, 100%, 0);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+.show .section {
+    transform: translateZ(0);
+}
